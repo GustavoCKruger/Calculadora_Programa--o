@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }    
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +12,7 @@ body{
     background-color: #f7f7f7;
 }
 
-.calculator{
+.calculator {
     width: 300px;
     background-color: #464646;
     border-radius: 10px;
@@ -21,21 +21,35 @@ body{
     overflow: hidden;
 }
 
-.result{
-    height: 75px;
+.result {
+    height: 90px;
     padding: 20px;
     text-align: right;
     color: #fff;
     font-size: 2.5rem;
+    background-color: #464646;
+    max-width: 310px;
+}
+.display{
+    height: 30px;
+    padding: 20px;
+    text-align: right;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #464646;
+    max-width: 310px;
+    border: none;
 }
 
-.buttons{
+
+
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1px;
 }
 
-.buttons button{
+.buttons input {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,22 +63,22 @@ body{
     cursor: pointer;
 }
 
-.button-zero{
+.button-zero {
     grid-column: span 2;
 }
 
-.bg-gray{
+.bg-gray {
     background-color: #585858;
 }
 
-.bg-light-gray{
+.bg-light-gray {
     background-color: #747474;
 }
 
-button:active{
+.buttons input:active {
     opacity: 0.9;
 }
 
-.bg-orange{
+.bg-orange {
     background-color: #f2a43b;
 }
