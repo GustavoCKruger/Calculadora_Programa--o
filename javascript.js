@@ -16,3 +16,7 @@ function limpar(){
   document.getElementById('result').value = "";
 }
 
+function limparHistorico(){
+  document.getElementById('result').value = "";
+  document.getElementById('display').value = "";
+}
