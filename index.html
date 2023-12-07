@@ -6,44 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
     <!-- CALCULATOR -->
     <div class="calculator">
         <!-- DISPLAY -->
-        
+
         <input type="text" id="display" name="display" class="display" disabled>
         <input type="text" id="result" name="result" class="result" disabled>
         <!-- BUTTONS -->
         <div class="buttons">
 
-        <input type="button" value="AC" onclick="limparHistorico('0')" class="bg-gray">
-        <input type="button" value="C" onclick="limpar('0')" class="bg-gray">
-        <input type="button" value="%" onclick="adicionarResult('%')" class="bg-gray">
-        <input type="button" value="/" onclick="adicionarResult('/')" class="bg-orange">
-        
-        <input type="button" value="7" onclick="adicionarResult('7')" class="bg-light-gray">
-        <input type="button" value="8" onclick="adicionarResult('8')" class="bg-light-gray">
-        <input type="button" value="9" onclick="adicionarResult('9')" class="bg-light-gray">
-        <input type="button" value="*" onclick="adicionarResult('*')" class="bg-orange">
+            <input type="button" value="AC" onclick="limparHistorico('0')" class="bg-gray">
+            <input type="button" value="C" onclick="limpar('0')" class="bg-gray">
+            <input type="button" value="Del" onclick="limparUltimoNum()" class="bg-gray">
+            <input type="button" value="/" onclick="adicionarResult('/')" class="bg-orange">
 
-        <input type="button" value="4" onclick="adicionarResult('4')" class="bg-light-gray">
-        <input type="button" value="5" onclick="adicionarResult('5')" class="bg-light-gray">
-        <input type="button" value="6" onclick="adicionarResult('6')" class="bg-light-gray">
-        <input type="button" value="-" onclick="adicionarResult('-')" class="bg-orange">
+            <input type="button" value="7" onclick="adicionarResult('7')" class="bg-light-gray">
+            <input type="button" value="8" onclick="adicionarResult('8')" class="bg-light-gray">
+            <input type="button" value="9" onclick="adicionarResult('9')" class="bg-light-gray">
+            <input type="button" value="*" onclick="adicionarResult('*')" class="bg-orange">
 
-        <input type="button" value="1" onclick="adicionarResult('1')" class="bg-light-gray">
-        <input type="button" value="2" onclick="adicionarResult('2')" class="bg-light-gray">
-        <input type="button" value="3" onclick="adicionarResult('3')" class="bg-light-gray">
-        <input type="button" value="+" onclick="adicionarResult('+')" class="bg-orange">
+            <input type="button" value="4" onclick="adicionarResult('4')" class="bg-light-gray">
+            <input type="button" value="5" onclick="adicionarResult('5')" class="bg-light-gray">
+            <input type="button" value="6" onclick="adicionarResult('6')" class="bg-light-gray">
+            <input type="button" value="-" onclick="adicionarResult('-')" class="bg-orange">
 
-        <input type="button" value="0" onclick="adicionarResult('0')" class="bg-light-gray button-zero">
-        <input type="button" value="," onclick="adicionarResult(',')" class="bg-light-gray">
-        <input type="button" value="=" onclick="calcular()" class="bg-orange">
-        
-    </div>
+            <input type="button" value="1" onclick="adicionarResult('1')" class="bg-light-gray">
+            <input type="button" value="2" onclick="adicionarResult('2')" class="bg-light-gray">
+            <input type="button" value="3" onclick="adicionarResult('3')" class="bg-light-gray">
+            <input type="button" value="+" onclick="adicionarResult('+')" class="bg-orange">
+
+            <input type="button" value="0" onclick="adicionarResult('0')" class="bg-light-gray button-zero">
+            <input type="button" value="," onclick="adicionarResult(',')" class="bg-light-gray">
+            <input type="button" value="=" onclick="calcular()" class="bg-orange">
+
+        </div>
     </div>
 
     <script src="javascript.js"></script>
